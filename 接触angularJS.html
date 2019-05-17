@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" ng-app="">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+</head>
+<body>
+<input type="text" ng-model="a">
+<div ng-bind="a">
+
+</div>
+
+<input type="text" ng-model="name">
+<div>
+    我的名字叫做: {{name}}
+</div>
+
+<input type="text" ng-model="x">
+<input type="text" ng-model="y">
+<span>{{x*y}}</span>
+</body>
+</html>
