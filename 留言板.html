@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="angular.min.js"></script>
+</head>
+<body ng-init="arr=[{name:'zxlala',content:'hello!!'},{name:'zxllyed',content:'hello!!'},{name:'zx',content:'hello!!'},{name:'zeng',content:'hello!!'}]">
+名字: <input type="text" ng-model="name"><br>
+内容: <input type="text" ng-model="content"><br>
+<input type="button" value="提交到后面" ng-click="arr.push({name:name,content:content})">
+<input type="button" value="提交最前面" ng-click="arr.unshift({name:name,content:content})">
+<ul>
+    <li ng-repeat="json in arr">
+        <h4>{{json.name}}</h4>
+        <p>{{json.content}}</p>
+    </li>
+</ul>
+</body>
+</html>

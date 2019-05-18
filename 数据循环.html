@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="angular.min.js"></script>
+</head>
+<body ng-init="arr=[1,2,3,4,4]">
+<ul>
+    <li ng-repeat="num in arr track by $index">{{num}}</li>
+</ul>
+<div ng-init="arr1=[{user:'zxlala',age:12},{user:'zxllyed',age:24},{user:'yangkangs',age:11},{user:'xiongyu',age:30}]">
+    <ul>
+        <li ng-repeat="json in arr1">{{json.user}},{{json.age}}</li>
+    </ul>
+    <ul>
+        <li ng-repeat="(k,v) in arr1">{{k}},{{v.user}},{{v.age}}</li>
+    </ul>
+</div>
+<div ng-init="arr2=[1,2,3,4,5,6,7]">
+    <ul>
+        <li ng-repeat="(index,val) in arr2">{{index}},{{val}}</li>
+    </ul>
+</div>
+</body>
+</html>
